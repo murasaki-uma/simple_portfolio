@@ -14,7 +14,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('browser-sync', function() {
 	browserSync.init({
 		server: {
-			baseDir: '', // ルートディレクトリ
+			baseDir: './docs', // ルートディレクトリ
 			index: 'index.html'
 		},
 		startPath: ''
@@ -70,7 +70,7 @@ gulp.task('refresh',function () {
 
 gulp.task('pug', function buildHTML() {
     var srcGlob = paths.srcDir + '/pug/*.pug';
-    var dstGlob = paths.dstDir + './';
+    var dstGlob = paths.dstDir + '/';
     gulp.src([srcGlob])
         .pipe(plumber())
         .pipe(watch([srcGlob]))
