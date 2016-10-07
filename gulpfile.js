@@ -8,7 +8,7 @@ var connect = require("gulp-connect")
 const babel = require('gulp-babel');
 var runSequence = require('run-sequence');
 
-var paths = {srcDir:"src",dstDir:""}
+var paths = {srcDir:"src",dstDir:"docs"}
 var browserSync = require('browser-sync').create();
 
 gulp.task('browser-sync', function() {
