@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>geometry clock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            color: #cccccc;
+            font-family:Monospace;
+            font-size:13px;
+            text-align:center;
+
+            margin: 0px;
+            overflow: hidden;
+            background: -moz-radial-gradient(center, ellipse cover, rgb(250,250,250)0%,rgb(240,240,240)40%,rgb(230,230,230)50%,rgb(220,220,220)70%,rgb(200,200,200)80%,rgb(180,180,180)90%,rgb(140,140,140)100%); /* FF3.6-15 */
+            background: -webkit-radial-gradient(center, ellipse cover, rgb(250,250,250)0%,rgb(240,240,240)40%,rgb(230,230,230)50%,rgb(220,220,220)70%,rgb(200,200,200)80%,rgb(180,180,180)90%,rgb(140,140,140)100%); /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(rgb(250,250,250)0%,rgb(240,240,240)40%,rgb(230,230,230)50%,rgb(220,220,220)70%,rgb(200,200,200)80%,rgb(180,180,180)90%,rgb(140,140,140)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        #info {
+            position: absolute;
+            top: 0px; width: 100%;
+            padding: 5px;
+        }
+
+        a {
+            color: #0080ff;
+        }
+
+
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100i|Archivo+Narrow:700|BenchNine:300|Lato:300|Open+Sans+Condensed:300i|Open+Sans:400,700|Six+Caps|Source+Sans+Pro:300i" rel="stylesheet">
+</head>
+<body>
+
+<div id="container"></div>
+<canvas id="maincanvas">
+
+</canvas>
+<script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+
+<script src="../js/dat.gui.min.js"></script>
+<script src="../js/three.js"></script>
+<script src="../js/OrbitControls.js"></script>
+<script src="../js/stats.min.js"></script>
+<script src="../js/clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+ul
+  margin 0
+  padding 0
+  display flex
+  li
+    margin 0 5px
+canvas
+  position fixed
+  top 0
+  left 0
+
+li
+  list-style none
+  font-size 14px
+li:first-child
+  margin-left 0
+h1,h2,p
+  color #ae4fff
+  font-family: 'Lato', sans-serif;
+  font-weight lighter
+.plese
+  margin 20px 0
+h1,h2
+  font-size 24px
+p
+  color white
+  margin 5px 0
+a
+  color #ae4fff
+  text-decoration none
+  padding 1px
+  background-color #D3FF2D !important
+  display inline-block
+body
+  font-family: 'Lato', sans-serif,'Hiragino Kaku Gothic ProN', '游ゴシック Medium', 'メイリオ', meiryo, sans-serif;
+
+  color #fff
+  .bg
+    position: fixed
+    width 100%
+    height 100%
+    top 0
+    bottom 0
+
+  .contents
+    width 100%
+    position absolute
+    z-index 999
+    top 0
+    left 0
+
+
+.contents_inner
+  transform: translateZ(0);
+  position: relative
+  height auto
+
+  padding 20px
+  header
+  width 100%
+  height auto
+
+  main
+    //-webkit-animation: fadeOut 0.4s ease-in-out forwards;
+    //animation: fadeOut 0.4s ease-in-out forwards;
+    opacity 0
+    width 800px
+    padding-top 100px
+
+    article
+      margin 0
+      margin-bottom 80px
+
+      .inner
+        border-bottom 1px solid #fff
+        //width 600px
+        padding-bottom 30px
+        h2
+          margin 0px 0
+        ul
+          margin 10px 0
+        .images
+          margin 10px 0
+          img
+            margin 10px 0
+            width 100%
+
+
+
+
+
+.dotted {
+  //opacity 0
+  //padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.5), rgba(0,0,0,.5) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.5), rgba(0,0,0,.5) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.5), rgba(0,0,0,.5) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.5), rgba(0,0,0,.5) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity 1.0
+  }
+
+  100% {
+    opacity 0.0
+  }
+
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity 0.0
+  }
+
+  100% {
+    opacity 1.0
+  }
+
+}
+
+
+
+
+main:hover
+  -webkit-animation: fadeIn 0.4s ease-in-out forwards;
+  animation: fadeIn 0.4s ease-in-out forwards;
